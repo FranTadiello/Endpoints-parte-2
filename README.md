@@ -1,89 +1,42 @@
-# Criando Endpoints
+# 🌌 API de Planetas — Endpoints com TypeScript
 
-Para criar endpoints neste repositório, siga estes passos:
+Este é um projeto desenvolvido durante o processo de nivelamento da E-acelera, com foco em criar uma API REST utilizando **Node.js**, **Express** e **TypeScript**. O sistema simula operações relacionadas a planetas, como listar, buscar por nome, adicionar e deletar planetas.
 
-1. Abra o projeto no seu editor de código preferido.
-2. Navegue até o diretório `src`.
-3. Abra o arquivo `server.ts`, para entender como o server é rodado.
-4. Defina seus endpoints usando o framework Express.js. Aqui está um exemplo:
+## 🚀 Objetivo
 
-    ```typescript
-    import express from 'express';
+O objetivo é consolidar conhecimentos sobre:
+- Estruturação de projetos com Node.js e TypeScript
+- Criação de endpoints usando o Express
+- Manipulação de dados em memória
+- Boas práticas no desenvolvimento backend
 
-    const app = express();
+## 🛠️ Tecnologias Utilizadas
 
-    app.get('/', async (req, res) => {
-        res.send("hello world!")
-    })
-    ```
+- Node.js
+- Express
+- TypeScript
+- Nodemon
+- ts-node
 
-    Tem também um exemplo no arquivo `src/routes/index.ts`
+## 📁 Estrutura do Projeto
+src/ ├── controllers/ │ └── planetasController.ts ├── models/ │ └── planeta.ts ├── routes/ │ └── planetasRoutes.ts └── server.ts
 
-5. Para adicionar um novo endpoint, você pode criar um novo arquivo no diretório `src/routes` e importá-lo no arquivo `app.ts`. Certifique-se de definir corretamente as rotas e os manipuladores de cada endpoint.
+## 🧪 Endpoints Implementados
 
-6. Após definir seus endpoints, você pode iniciar a aplicação executando o comando `npm run dev` no terminal. Isso iniciará o servidor e você poderá testar seus endpoints usando uma ferramenta como o Postman.
+- `GET /planetas` → Lista todos os planetas
+- `GET /planetas/:nome` → Busca um planeta por nome
+- `POST /planetas` → Cria um novo planeta
+- `DELETE /planetas/:nome` → Remove um planeta por nome
 
-7. Certifique-se de ter todas as dependências instaladas executando o comando `npm install` antes de rodar a aplicação pela primeira vez.
+## 📦 Instalação
 
-8. Se você precisar fazer alterações nos endpoints existentes, basta editar os arquivos correspondentes no diretório `src/routes` e reiniciar o servidor.
+1. Clone o repositório:
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+2. Instale as dependências:
+    npm install
+3. Execute o servidor em modo desenvolvimento:
+    npm run dev
 
-9. Lembre-se de documentar adequadamente cada endpoint, incluindo informações sobre os parâmetros esperados, o formato da resposta e quaisquer requisitos adicionais.
-
-10. Divirta-se criando seus endpoints e explorando as possibilidades do Express.js!
-
-### Tecnologias Usadas
-
-| Tecnologia | Descrição |
-|------------|-----------|
-| Express.js | Framework web rápido e minimalista para Node.js |
-| Axios        | Usada para fazer requisição para endpoints de outras aplicações      |
-|               |                   |
-
-### Arquitetura
-
-```
- 📁ensinando-endpoints-parte-1
-   |
-   |--📁node_modules
-   |
-   |--📁 src
-   |  ||
-   |  ||--📁 client
-   |  |    |- 📄 index.ts
-   |  ||
-   |  ||--📁 controllers
-   |  |    |- 📄 planetasController.ts
-   |  |
-   |  ||--📁 models
-   |  |    |- 📄 planeta.json
-   |  |    |- 📄 planetas.ts
-   |  |
-   |  ||--📁 routes
-   |  |    |- 📄 planetas.ts
-   |  |    |- 📄 index.ts
-   |  ||--📁 services
-   |  |    |- 📄 planetaServices.ts
-   |  |
-   |  ||-📄 app.ts
-   |  |
-   |- 📄 .gitignore
-   |- 📄 package-lock.json
-   |- 📄 package.json
-   |- 📄 README.md
-   |- 📄 server.ts
-   |- 📄 tsconfig.json
-```
-
-### Exercício
-
-A ideia é você aprender consumir APIs externas e também manipular arquivos json.
-
-Primeiro você deve entender como criar endpoints, logo depois ir criando as lógicas de negócio na service.
-
-Tratar erros é na controller, mas atenção: ela NAO pode ter lógica alguma.
-
-Logo após, na hora de fazer os posts, você pode usar o arquivo json criado na model, para poder aprender sobre outros métodos também: POST, PUT, etc.
-
-A ideia desse exercício é você explorar tudo que tem aqui.
-
-Na hora de fazer requisição, use o client previamente criado e use a documentação da api de [star wars](https://swapi.dev/documentation).
+## ✅ Requisitos
+- Node.js instalado
+- npm instalado
