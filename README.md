@@ -15,7 +15,6 @@ O objetivo é consolidar conhecimentos sobre:
 - Node.js
 - Express
 - TypeScript
-- Nodemon
 - ts-node
 
 ## 📁 Estrutura do Projeto
