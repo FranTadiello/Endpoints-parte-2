@@ -18,7 +18,14 @@ O objetivo é consolidar conhecimentos sobre:
 - ts-node
 
 ## 📁 Estrutura do Projeto
-src/ ├── controllers/ │ └── planetasController.ts ├── models/ │ └── planeta.ts ├── routes/ │ └── planetasRoutes.ts └── server.ts
+src/ 
+├── controllers/ 
+│ └── planetasController.ts 
+├── models/ 
+│ └── planeta.ts 
+├── routes/ 
+│ └── planetasRoutes.ts 
+└── server.ts
 
 ## 🧪 Endpoints Implementados
 
